@@ -1,0 +1,15 @@
+Package: ksgeneral
+Type: Package
+Title: Computing the Two-Sided Kolmogorov-Smirnov Distribution When the
+        Underlying cdf is (Dis)continuous
+Version: 0.1.0
+Author: Senren Tan
+Maintainer: Senren Tan <senren.tan@cass.city.ac.uk>
+Description: This package contains a proposed revision to the stats::ks.test() and dgof::ks.test() functions, improving the speed and accuracy of the one-sample two-sided Kolmogorov-Smirnov test when the underlying cdf is continuous or purely discrete, by using the FFT-based algorithm. It also adds features necessary for doing one-sample tests with hypothesized mixed distributions. The package also contains cont_ks_c_cdf(), disc_ks_c_cdf(), mixed_ks_c_cdf() functions, computing the complementary cdf for the KS statistic when the hypothesized distribution is continuous, discrete, mixed, respectively.
+License: GPL (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+Imports: Rcpp (>= 0.12.12), MASS
+LinkingTo: Rcpp, MASS
+NeedsCompilation: yes
+Packaged: 2017-10-09 12:21:59 UTC; md101
