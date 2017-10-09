@@ -6,4 +6,4 @@ To install the R package, one has to first install the library FFTW3 available f
 
 Also, since it is required to build the package from source, a C++ compiler is needed. If you are working on Windows, you can download Rtools available from https://cran.r-project.org/bin/windows/Rtools/. If you are working on MacOS, you can download Xcode from the App Store.
 
-After installng the FFTW3 library and C++ compilers, you can build the packages ksgeneral from source, by running install("ksgeneral_0.1.0.tar.gz", repos = NULL, type = "source", INSTALL_opts = "--no-multiarch"), when the source file is located in the current working directory.      
+After installng the FFTW3 library and C++ compilers, you can download the source file from Github and build the packages ksgeneral from source, by running install("ksgeneral_0.1.0.tar.gz", repos = NULL, type = "source", INSTALL_opts = "--no-multiarch"), when the source file is located in the current working directory.      
