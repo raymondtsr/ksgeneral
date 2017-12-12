@@ -2,7 +2,7 @@
 ![downloads](https://cranlogs.r-pkg.org/badges/KSgeneral)
 ![downloads](https://cranlogs.r-pkg.org/badges/last-week/KSgeneral)
 
-# ksgeneral
+# KSgeneral
 Computing (complementary)cdf for one-sample Kolmogorov-Smirnov statistic when the underlying distribution is continuous, mixed, or purely discrete.
 
 # Installation
