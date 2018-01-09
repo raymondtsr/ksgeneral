@@ -12,5 +12,5 @@ In order to build the KSgeneral package from source, a C++ compiler is required.
 The package KSgeneral uses Rcpp in R, and utilizes the C++ code that efficiently computes the complementary cdf using the Exact-KS-FFT method developed in Dimitrova, Kaishev, Tan (2017), available from http://openaccess.city.ac.uk/18541.
 Since the latter requires computation of Fast Fourier Transform (FFT), the FFTW3 library developed by Matteo Frigo and Steven G.Johnson needs to be installed from http://www.fftw.org/index.html. 
 It should be noted that the Rtools and FFTW3 should be installed in the system PATH.
-The recommended way to building the FFTW3 library on Windows is to install the free MinGW Unix environment so that one can use the GNU C compiler. (Rtools use MinGW compiler as well). If you are using R on MacOS, the FFTW3 library is typically installed in /usr/local.
+
 
