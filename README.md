@@ -14,4 +14,3 @@ Since the latter requires computation of Fast Fourier Transform (FFT), the FFTW3
 It should be noted that the Rtools and FFTW3 should be installed in the system PATH.
 The recommended way to building the FFTW3 library on Windows is to install the free MinGW Unix environment so that one can use the GNU C compiler. (Rtools use MinGW compiler as well). If you are using R on MacOS, the FFTW3 library is typically installed in /usr/local.
 
-After installng the FFTW3 library and C++ compilers, you can download the source file from Github and build the packages KSgeneral from source, by running install.packages("KSgeneral_0.1.0.tar.gz", repos = NULL, type = "source", INSTALL_opts = "--no-multiarch") in RStudio, when the source package is located in the current working directory; or running R CMD INSTALL --no-multiarch KSgeneral_0.1.0.tar.gz from the command line.      
