@@ -13,4 +13,5 @@ The package KSgeneral uses Rcpp in R, and utilizes the C++ code that efficiently
 Since the latter requires computation of Fast Fourier Transform (FFT), the FFTW3 library developed by Matteo Frigo and Steven G.Johnson needs to be installed from http://www.fftw.org/index.html. 
 It should be noted that the Rtools and FFTW3 should be installed in the system PATH.
 
-
+For Windows users, The FFTW3 library for Windows (32-bit or 64-bit) can be found in the local323.zip file, available from http://www.stats.ox.ac.uk/pub/Rtools/libs.html.
+For Mac or Unix users, it is straightforward to install the FFTW3 library from the command line, following the instructions from http://www.fftw.org/index.html.
