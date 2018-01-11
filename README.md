@@ -1,6 +1,7 @@
 ![downloads](https://cranlogs.r-pkg.org/badges/grand-total/KSgeneral)
 ![downloads](https://cranlogs.r-pkg.org/badges/KSgeneral)
 ![downloads](https://cranlogs.r-pkg.org/badges/last-week/KSgeneral)
+[![Rdoc](http://www.rdocumentation.org/badges/version/KSgeneral)](http://www.rdocumentation.org/packages/KSgeneral) 
 
 # KSgeneral
 
