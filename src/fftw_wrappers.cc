@@ -56,12 +56,12 @@ FFTW_C2R_1D_Executor::~FFTW_C2R_1D_Executor()
     free_aligned_mem(output_buffer);
 }
 
-void FFTW_C2R_1D_Executor::set_input_zeropadded(const complex<double>* buffer, int size)
-{
-    assert(size == input_size);
-    memcpy(input_buffer, buffer, sizeof(complex<double>)*size);
-    memset(&input_buffer[size], 0, sizeof(complex<double>)*(input_size - size));
-}
+//void FFTW_C2R_1D_Executor::set_input_zeropadded(const complex<double>* buffer, int size)
+//{
+//    assert(size == input_size);
+//    memcpy(input_buffer, buffer, sizeof(complex<double>)*size);
+//    memset(&input_buffer[size], 0, sizeof(complex<double>)*(input_size - size));
+//}
 
 void FFTW_C2R_1D_Executor::execute()
 {
