@@ -19,7 +19,7 @@
 // 2. Run execute().
 // 3. Read output from output_buffer[0], ..., output_buffer[output_size-1].
 //    Note that the output is composed of n_real_samples/2 + 1 complex numbers.
-// 
+//
 // These 3 steps can be repeated many times.
 
 class FFTW_R2C_1D_Executor {
@@ -44,7 +44,7 @@ class FFTW_C2R_1D_Executor {
 public:
     FFTW_C2R_1D_Executor(int n_real_samples);
     ~FFTW_C2R_1D_Executor();
-    void set_input_zeropadded(const std::complex<double>* buffer, int size);
+//    void set_input_zeropadded(const std::complex<double>* buffer, int size);
     void execute();
 
     const int input_size;
