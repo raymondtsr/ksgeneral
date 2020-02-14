@@ -16,9 +16,24 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// ecdf_noncrossing_probability_wrapper
+double ecdf_noncrossing_probability_wrapper(int n, SEXP g_steps, SEXP h_steps, bool use_fft);
+RcppExport SEXP _KSgeneral_ecdf_noncrossing_probability_wrapper(SEXP nSEXP, SEXP g_stepsSEXP, SEXP h_stepsSEXP, SEXP use_fftSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< int >::type n(nSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type g_steps(g_stepsSEXP);
+    Rcpp::traits::input_parameter< SEXP >::type h_steps(h_stepsSEXP);
+    Rcpp::traits::input_parameter< bool >::type use_fft(use_fftSEXP);
+    rcpp_result_gen = Rcpp::wrap(ecdf_noncrossing_probability_wrapper(n, g_steps, h_steps, use_fft));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_KSgeneral_ks_c_cdf_Rcpp", (DL_FUNC) &_KSgeneral_ks_c_cdf_Rcpp, 1},
+    {"_KSgeneral_ecdf_noncrossing_probability_wrapper", (DL_FUNC) &_KSgeneral_ecdf_noncrossing_probability_wrapper, 4},
     {NULL, NULL, 0}
 };
 

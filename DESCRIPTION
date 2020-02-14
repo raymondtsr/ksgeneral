@@ -1,6 +1,6 @@
 Package: KSgeneral
 Type: Package
-Version: 0.1.1
+Version: 0.1.2
 Title: Computing P-Values of the K-S Test for (Dis)Continuous Null
         Distribution
 Author: Dimitrina S. Dimitrova <D.Dimitrova@city.ac.uk>,
@@ -21,3 +21,4 @@ Imports: Rcpp (>= 0.12.12), MASS, dgof
 LinkingTo: Rcpp
 NeedsCompilation: yes
 Packaged: 2018-05-14 16:57:00 UTC; md101
+RoxygenNote: 6.1.1

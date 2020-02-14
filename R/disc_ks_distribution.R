@@ -176,12 +176,13 @@ disc_ks_c_cdf <- function(q, n, y, ..., exact = NULL, tol = 1e-8, sim.size = 100
           upper_rect <- upper_rectangles_1(q, n, y, z, tol)
           lower_rect <- lower_rectangles_1(q, n, y, z, tol)
 
-          df <- data.frame(rbind(upper_rect, lower_rect))
-          write.table(df,"Boundary_Crossing_Time.txt", sep = ", ", row.names = FALSE, col.names = FALSE)
-
-          PVAL <- KSgeneral::ks_c_cdf_Rcpp(n)
-
-          file.remove("Boundary_Crossing_Time.txt")
+          # df <- data.frame(rbind(upper_rect, lower_rect))
+          # write.table(df,"Boundary_Crossing_Time.txt", sep = ", ", row.names = FALSE, col.names = FALSE)
+          # 
+          # PVAL <- KSgeneral::ks_c_cdf_Rcpp(n)
+          # 
+          # file.remove("Boundary_Crossing_Time.txt")
+          PVAL <-  1 - compute_noncrossing_prob(upper_rect, lower_rect)
         }
         else {# Wood and Altavela (1978)'s MC-based method
           if ((n > 100000) && (z > 15)){

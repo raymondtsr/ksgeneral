@@ -57,14 +57,14 @@ cont_ks_cdf <- function(q, n)
           i <- i + 1
         }
 
-        df <- data.frame(rbind(f_b, f_a))
-        write.table(df,"Boundary_Crossing_Time.txt", sep = ", ", row.names = FALSE, col.names = FALSE)
-        #################################
-
-        PVAL <- 1 - KSgeneral::ks_c_cdf_Rcpp(n)
-
-        file.remove("Boundary_Crossing_Time.txt")
-
+        # df <- data.frame(rbind(f_b, f_a))
+        # write.table(df,"Boundary_Crossing_Time.txt", sep = ", ", row.names = FALSE, col.names = FALSE)
+        # #################################
+        # 
+        # PVAL <- 1 - KSgeneral::ks_c_cdf_Rcpp(n)
+        # 
+        # file.remove("Boundary_Crossing_Time.txt")
+        PVAL <-  compute_noncrossing_prob(f_b, f_a)
       }
 
     }

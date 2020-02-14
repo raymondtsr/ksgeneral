@@ -153,3 +153,9 @@ double ecdf_noncrossing_probability(int n, const vector<double>& g_steps, const 
     return poisson_nocross_probs[n] / poisson_pmf(n, n);
 }
 
+// [[Rcpp::export]]
+double ecdf_noncrossing_probability_wrapper(int n, SEXP g_steps, SEXP h_steps, bool use_fft) {
+	vector<double> g_steps_vec = as<vector<double>>(g_steps);
+	vector<double> h_steps_vec = as<vector<double>>(h_steps);
+	return ecdf_noncrossing_probability(n, g_steps_vec, h_steps_vec, use_fft);
+}
