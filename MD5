@@ -1,4 +1,4 @@
-0c11f03e18bb1d3b48a172e007a83b78 *DESCRIPTION
+0887fb1132921a955a0cfd937759f7e3 *DESCRIPTION
 cde9fe50da5a8c80a4ddbd3e3cec867e *NAMESPACE
 fce058cda7ec57d48b2b818f011952a7 *R/RcppExports.R
 2d34980cf8a72df4e38ffe5216de3e69 *R/cont_ks_distribution.R
@@ -7,10 +7,10 @@ ed107f587e32b56fed9defda957c2ed9 *R/cont_ks_test.R
 3cae576e9be19169cc75b97f6cf0d5a1 *R/disc_ks_test.R
 40e0e2c9716b5ffdb31341c831166db0 *R/mixed_ks_distribution.R
 030c5a472d5bd7896c6a447677db131c *R/mixed_ks_test.R
-174b1a2c406f482cb0412df242eff230 *build/partial.rdb
+e00b8b62b80b7c76df2428152b7ecf2d *build/partial.rdb
 2ee6281df3a48ebf8e9b5943efc6bce6 *cleanup
-94e00ec47675e125952f9d3cac1bcc99 *configure
-d350cb4ce114d339b23462a6bdfac09d *configure.ac
+0e422ae34feaca73e49f36428747d100 *configure
+ff4e92e518362a88b2c22b329eecf464 *configure.ac
 d41d8cd98f00b204e9800998ecf8427e *configure.win
 7ea6eb2977de422f3615d838e9488d18 *data/Population_Data.csv.gz
 b477ab5713c1273ad448277d56acb0cb *inst/FFTW_LICENSE.TXT
@@ -33,8 +33,8 @@ c136bb663f2eedee6abd7480f773e417 *src/cont_ks_dist.cpp
 6f3c2b7f6dde49cc89d0b07c91053be6 *src/crossprob_new.cc
 5adab4dbb5841ab03a734d328ed92b2f *src/crossprob_new.h
 5bd084ef109da7d3d2c3b2c7a02d78ef *src/fftw3.h
-325f41f4308972828492d284432074f1 *src/fftw_wrappers.cc
-9f626d0af951eeedde7907b2a387f9b3 *src/fftw_wrappers.h
+d57ec10a113fa7fdddf6f4a920fe5302 *src/fftw_wrappers.cc
+1a73e2b11ad1ba03040eab33dea52bbb *src/fftw_wrappers.h
 ec0c3482e0757867764c069aeb6254f5 *src/fftwconvolver.cc
 ff20f7470a149208fcc44afae7b8437e *src/fftwconvolver.h
 3f44c663d5dc9949c7f9b15ed5c5951e *src/poisson_pmf.cc

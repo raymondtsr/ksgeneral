@@ -14,13 +14,13 @@ compute_noncrossing_prob<-function(h,l,CDF = punif,FFT= TRUE){
     if(any(l>h)) 
         return(0)
     n=length(l)
-    h<- CDF(h)
-    l<- CDF(l)
     ## make sure l and h are increasing sequences
     for(i in seq_len(n-1)){
         if(l[i]>l[i+1]) l[i+1] <- l[i]
         j <- n-i
         if(h[j] > h[j+1]) h[j] <- h[j+1]
     }
+    h<- CDF(h)
+    l<- CDF(l)
     ecdf_noncrossing_probability_wrapper(n,h,l,FFT)
 }
