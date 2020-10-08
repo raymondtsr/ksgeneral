@@ -12,7 +12,7 @@ If a data sample is supplied, 'KSgeneral' (also available from  https://CRAN.R-p
 
 The package 'KSgeneral' implements a novel, accurate and efficient method named Exact-KS-FFT, developed by Dimitrova, Kaishev, Tan (2017), available together with the underlying C++ code from http://openaccess.city.ac.uk/18541.
 
-**To cite this package in publication use: Dimitrina S. Dimitrova, Vladimir K. Kaishev, and Senren Tan. Computing the Kolmogorov-Smirnov Distribution When the Underlying CDF is Purely Discrete, Mixed, or Continuous. *Journal of Statistical Software*. 2020, 95(10): 1–42. <doi:10.18637/jss.v095.i10>,** which is available from https://www.jstatsoft.org/article/view/v095i10 
+**To cite this package in publication use: Dimitrina S. Dimitrova, Vladimir K. Kaishev, and Senren Tan. Computing the Kolmogorov-Smirnov Distribution When the Underlying CDF is Purely Discrete, Mixed, or Continuous. *Journal of Statistical Software*. 2020, 95(10): 1–42. <doi:10.18637/jss.v095.i10>,** which is available from https://www.jstatsoft.org/article/view/v095i10. 
 
 The p-value is expressed as a double-boundary non-crossing probability for a homogeneous Poisson process, which is then efficiently computed using Fast Fourier Transform (FFT). 
 
