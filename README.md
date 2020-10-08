@@ -8,7 +8,8 @@
 
 Computes a p-value of the one-sample two-sided (or one-sided, as a special case) Kolmogorov-Smirnov (KS) statistic, for any fixed critical level, and an arbitrary, possibly large sample size for a pre-specified purely discrete, mixed or continuous cumulative distribution function (cdf) under the null hypothesis. 
 If a data sample is supplied, 'KSgeneral' (also available from  https://CRAN.R-project.org/package=KSgeneral) computes the p-value corresponding to the value of the KS test statistic computed based on the user provided data sample. 
-The package 'KSgeneral' implements a novel, accurate and efficient method named Exact-KS-FFT, developed by Dimitrova, Kaishev, Tan (2017), available together with the underlying C++ code from http://openaccess.city.ac.uk/18541. 
+The package 'KSgeneral' implements a novel, accurate and efficient method named Exact-KS-FFT, developed by Dimitrova, Kaishev, Tan (2017), available together with the underlying C++ code from http://openaccess.city.ac.uk/18541.
+**To cite this package in publication use: Dimitrina S. Dimitrova, Vladimir K. Kaishev, and Senren Tan. Computing the Kolmogorov-Smirnov Distribution When the Underlying CDF is Purely Discrete, Mixed, or Continuous. Journal of Statistical Software. 2020, 95(10): 1–42. <doi:10.18637/jss.v095.i10>.**
 The p-value is expressed as a double-boundary non-crossing probability for a homogeneous Poisson process, which is then efficiently computed using Fast Fourier Transform (FFT). The package can also be used to compute and plot the complementary cdf of the KS statistic which is known to depend on the hypothesized distribution when the latter is discontinuous (i.e. purely discrete or mixed).
 
 
