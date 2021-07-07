@@ -6,10 +6,10 @@
 ###PKG_CPPFLAGS = -I$(FFTW3_32)
 ###endif
 
-PKG_CPPFLAGS = -I$(LIB_FFTW)/include -I$(LIB_FFTW)
+PKG_CPPFLAGS = -I"$(LIB_FFTW)/include" -I"$(LIB_FFTW)"
 CXX11 = g++
 PKG_CXXFLAGS = -std=c++11
-PKG_LIBS = -L$(LIB_FFTW)/lib${R_ARCH} -L$(LIB_FFTW)/lib -lfftw3 -lm
+PKG_LIBS = -L"$(LIB_FFTW)/lib${R_ARCH}" -L"$(LIB_FFTW)/lib" -lfftw3 -lm
 #PKG_LIBS = -L$(LIB_FFTW)/lib -lfftw3
 
 

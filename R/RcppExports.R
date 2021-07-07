@@ -5,3 +5,7 @@ ks_c_cdf_Rcpp <- function(n) {
     .Call(`_KSgeneral_ks_c_cdf_Rcpp`, n)
 }
 
+ecdf_noncrossing_probability_wrapper <- function(n, g_steps, h_steps, use_fft) {
+    .Call(`_KSgeneral_ecdf_noncrossing_probability_wrapper`, n, g_steps, h_steps, use_fft)
+}
+
